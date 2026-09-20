@@ -1,0 +1,50 @@
+.list {
+    list-style-type: decimal;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+.list li {
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.3em;
+    margin: 10px auto;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: rgb(99, 99, 248);
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+#pItalic {
+    font-style: italic;
+}
+hr {
+   width: 80%;
+   margin: 0 auto; 
+}
+#main-parg {
+    width: 60%;
+}
+img {
+    width: 120px;
+    display: block;
+    margin: 50px auto;
+}
+body {
+    font-family: "Times New Roman", serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    border: 1px solid #ccc;
+}
