@@ -9,22 +9,22 @@
     margin-bottom: 10px;
 }
 p {
-    font-size: 1.3em;
-    margin: 10px auto;
+    font-size: 1em;
+    margin: 40px auto 20px;
     letter-spacing: 2px;
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 h2 {
-    color: rgb(99, 99, 248);
+    color: #006eb6;
     text-align: center;
     letter-spacing: 4px;
     margin-bottom: 10px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 #pItalic {
     font-style: italic;
@@ -42,9 +42,15 @@ img {
     margin: 50px auto;
 }
 body {
-    font-family: "Times New Roman", serif;
+    font-family: Georgia, serif;
     max-width: 600px;
     margin: 0 auto;
     padding: 30px 50px;
     border: 1px solid #ccc;
+}
+select {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font: 16px;
 }
