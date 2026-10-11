@@ -16,10 +16,11 @@ const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
 const closeButton = modal.querySelector('.close-viewer');
 
+// Event listener for opening the modal
 gallery.addEventListener('click', openModal);
 
-function openModal(event) {
-    const img = event.target;
+function openModal(e) {
+    const img = e.target;
     if (img.tagName !== 'IMG') {
         return;
     }
@@ -32,11 +33,13 @@ function openModal(event) {
 
     modal.showModal();
 }
+// Close modal on button click
 closeButton.addEventListener('click', () => {
     modal.close();
 });
-modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
+// Close modal if clicking outside the image
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
         modal.close();
     }
 });
