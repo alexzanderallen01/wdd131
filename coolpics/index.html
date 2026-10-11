@@ -8,16 +8,17 @@
     integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
+    <script src="coolpics.js" defer></script>
 </head>
 <body>
     <header>
     <h1>Cool Pics 📷</h1>
-    <button class="menu-btn">
+    <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
     </button>
-    <nav>
+    <nav class="hide">
         <a href="#">Home</a>
         <a href="#">People</a>
         <a href="#">Places</a>
@@ -28,33 +29,39 @@
     <main>
         <h1>Current Work</h1>
         <hr>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
+    <section class="gallery">
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
+        <figure>  
+            <img src="norris-sm.jpg" alt="landscape pic">
+        </figure>
     </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
-    <section>
-        <img src="norris-sm.jpg" alt="landscape pic">
-    </section>
+    <dialog class="viewer">
+        <img alt="">
+        <button class="close-viewer" aria-label="Close image viewer">X</button>
+    </dialog>
     </main>
     <footer>@2026 Not a real site 📷</footer>
 </body>
