@@ -61,6 +61,7 @@ main {
 .rating {
     color: #e5a000;
     letter-spacing: 2px;
+    font-size: .9rem;
 }
 
 .book-review h2 {
