@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfd0dc;
+    margin: 0;
+    padding: 20px;
+    color: #111;
+}
+.page-wrapper {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+.ticket-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.ticket-front,
+.ticket-back {
+    background-color: white;
+    border-radius: 18px;
+    padding: 30px;
+}
+.ticket-front h1 {
+    font-size: 2rem;
+    margin: 10px 0 30px;
+}
+#eventForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px 30px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+.field label {
+    font-size: 1.15rem;
+}
+input,
+select,
+button {
+    width: 100%;
+    min-width: 0;
+    padding: 14px;
+    font: inherit;
+    font-size: 1.15rem;
+    border: 2px solid #888;
+    border-radius: 5px;
+    background-color: white;
+}
+input:focus,
+select:focus {
+    outline: 2px solid #2868bd;
+    outline-offset: 1px;
+}
+.full {
+    grid-column: 1 / -1;
+}
+button {
+    background-color: #bfd0dc;
+    border: 3px outset #777;
+    cursor: pointer;
+    margin-top: 5px;
+}
+button:hover {
+    background-color: #d4e0e7;
+}
+.form-message {
+    color: #a00000;
+    font-weight: bold;
+    margin: 18px 0 0;
+}
+.ticket-back {
+    padding-top: 20px;
+}
+.ticket-back h2 {
+    font-size: 1.5rem;
+    margin: 0 0 15px;
+}
+.ticket-back p {
+    margin: 8px 0;
+}
+[hidden] {
+    display: none !important;
+}
+@media screen and (min-width: 650px) {
+    .ticket-front,
+    .ticket-back {
+        padding: 40px;
+    }
+    #eventForm {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 900px) {
+    .page-wrapper {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .ticket-front,
+    .ticket-back {
+        padding: 50px;
+        border-radius: 24px;
+    }
+    .ticket-front h1 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    input,
+    select,
+    button {
+        padding: 18px;
+        font-size: 1.4rem;
+    }
+    .field label {
+        font-size: 1.5rem;
+    }
+    #eventForm {
+        gap: 28px 30px;
+    }
+    .ticket-back h2 {
+        font-size: 2rem;
+    }
+}
