@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Snortleblat - Character Card">
+    <meta property="og:description" content=" Snortleblat, level 5 Swamp Beast Diplomat.">
+    <meta property="og:url" content="https://alexzanderallen01.github.io/wdd131/charactercard/">
+    <meta property="og:image" content="https://alexzanderallen01.github.io/wdd131/charactercard/snortleblat.webp">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Snortleblat - Character Card">
+    <meta name="twitter:description" content="Meet Snortleblat, a level 5 Swamp Beast Diplomat.">
+    <meta name="twitter:image" content="https://alexzanderallen01.github.io/wdd131/charactercard/snortleblat.webp">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="snortleblat.webp">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="character-card">
+            <img id="characterImage" src="" alt="">
+            <h1 id="characterName"></h1>
+            <div class="character-info">
+                <p><strong>Class:</strong> <span id="characterClass"></span></p>
+                <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+                <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+                <div class="buttons">
+                    <button id="attackButton">Attacked</button>
+                    <button id="levelButton">Level Up</button>
+                </div>
+                <p id="message" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

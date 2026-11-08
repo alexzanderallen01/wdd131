@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #edf2f5;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.character-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #292929;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.character-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.character-card h1 {
+    background-color: #607780;
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 20px 40px;
+}
+.character-info {
+    padding: 20px 40px;
+    color: white;
+}
+.character-info p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
+}
+button {
+    background-color: #607780;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #7d969f;
+}
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+@media screen and (max-width: 500px) {
+    .character-info {
+        padding: 20px;
+    }
+
+    .character-card h1 {
+        padding: 15px 20px;
+    }
+}
